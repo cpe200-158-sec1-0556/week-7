@@ -51,6 +51,12 @@ namespace twozerofoureight
             }
             return input;
         }
+        private int score = 2;
+        public int Score
+        {
+            get { return score; }
+            set { score = value; }
+        }
 
         public void PerformDown()
         {
@@ -102,6 +108,7 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            Score += 2;
             NotifyAll();
         }
 
@@ -154,6 +161,7 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            Score += 2;
             NotifyAll();
         }
 
@@ -208,6 +216,7 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            Score += 2;
             NotifyAll();
         }
 
@@ -258,6 +267,7 @@ namespace twozerofoureight
                 }
             }
             board = Random(board);
+            Score += 2;
             NotifyAll();
         }
     }
